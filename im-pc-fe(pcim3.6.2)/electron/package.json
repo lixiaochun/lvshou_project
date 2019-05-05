@@ -1,0 +1,15 @@
+{
+  "name": "aa",
+  "version": "1.0.0",
+  "description": "ds",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build64": "electron-packager . lsimApp --win --out ../lsimApp64 --arch=x64 --app-version=1.0.3 --electron-version=2.0.4 --icon=tip.ico",
+    "build32": "electron-packager . lsimApp --win --out ../lsimApp32 --arch=ia32 --app-version=1.0.3 --electron-version=2.0.4 --no-tmpdir --icon=tip.ico"
+  },
+  "devDependencies": {
+    "electron": "^2.0.4"
+  }
+}
