@@ -1,0 +1,135 @@
+/*
+* @desc 样式配置
+* @Author chenweiliang@lvshou.com(Ocean)
+*/
+
+// 字体
+@font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+// 默认字体颜色
+@font-color: rgba(71,86,105,1);
+// 字体默认行高 14px * 1.42857 = 20px
+@line-height: 1.42857;
+
+// 字体颜色
+@text-color: #666;
+// 辅助文本颜色
+@vice-text-color: #999;
+// 主颜色
+@primary-color: #20a0ff;
+// 错误
+@warning-color: #ff4949;
+
+/* Line-height 基础字符行高
+-------------------------- */
+@line-height-base: 1.428;
+
+/* Size 基础字体尺寸
+-------------------------- */
+@size-base: 14px;
+@fontSize-base: @size-base;
+@fontSize-largest: 20px;
+@fontSize-larger: 18px;
+@fontSize-large: 16px;
+@font-size-normal: @fontSize-base;
+@fontSize-small: 13px;
+@fontSize-smallest: 12px;
+
+/* Font
+-------------------------- */
+@font-size-base: @fontSize-base;
+@font-color-base: @color-base-black;
+@font-color-disabled-base: #bbb;
+
+/* Colors
+-------------------------- */
+@color-primary: #288DC8;
+
+@color-success: #19A547;
+@color-warning: #F68B24;
+@color-danger: #EA372A;
+@color-info: #00B3E9;
+
+@color-secondary: hsl(hue(@color-primary), 99%, lightness(@color-primary) * 0.9);
+@color-white: #fff;
+@color-dark-white: darken(@color-white, 2%);
+@color-black: #000;
+
+@color-base-black: #2C3E50;
+@color-light-black: #96A9BF;
+@color-extra-light-black: hsl(hue(@color-base-black), 19%, 35%);
+
+@color-base-silver: hsl(hue(@color-base-black), 16%, 58%);
+@color-light-silver:  hsl(hue(@color-base-black), 23%, 0.67%);
+@color-extra-light-silver: hsl(hue(@color-base-black), 26%, 80%);
+
+@color-base-gray: #D3DCE6;
+@color-light-gray: #E8F0F7;
+@color-extra-light-gray: hsl(hue(@color-base-black), 33%, 95%);
+
+/* Link
+-------------------------- */
+@link-color: @color-extra-light-black;
+@link-hover-color: @color-primary;
+
+/* Border
+-------------------------- */
+@border-width-base: 1px;
+@border-style-base: solid;
+@border-color-base: @color-extra-light-silver;
+@border-color-hover: @color-base-silver;
+@border-base: @border-width-base @border-style-base @border-color-base;
+@border-radius-base: 2px;
+@border-radius-small: 2px;
+@border-radius-circle: 100%;
+
+/* Box-shadow 盒子阴影
+-------------------------- */
+@box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+@box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12);
+
+/* Fill 背景
+-------------------------- */
+@fill-base: @color-white;
+
+/* z-index
+-------------------------- */
+@index-normal: 1;
+@index-top: 1000;
+@index-popper: 2000;
+
+/* Disable base
+-------------------------- */
+@disabled-fill-base: #F1F1F1;
+@disabled-color-base: #DFDFDF;
+@disabled-border-base: #E3E3E3;
+
+/* Icon 颜色
+-------------------------- */
+@icon-color: #666;
+
+/* Transition 动画参数
+-------------------------- */
+@transition: all .3s cubic-bezier(.645,.045,.355,1);
+@all-transition: all .3s cubic-bezier(.645,.045,.355,1);
+@fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1);
+@fade-linear-transition: opacity 200ms linear;
+@md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+@border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1);
+@color-transition-base: color .2s cubic-bezier(.645,.045,.355,1);
+
+// 元素间距
+@gap: 20px;
+// 边框颜色
+@border-color: @border-color-base;
+// 成功颜色
+@success-color: @color-success;
+
+// 内容块背景
+@section-bg: @color-dark-white;
+// 圆角
+@border-radius: @border-radius-base;
+
+// 导航高度
+@nav-height: 60px;
+// 左侧菜单
+@sider-width: 200px;

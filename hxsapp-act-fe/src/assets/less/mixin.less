@@ -1,0 +1,95 @@
+/*
+* @desc mixin
+* @Author chenweiliang@lvshou.com(Ocean)
+*/
+
+.clearfix() {
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    clear: both
+  }
+}
+
+.text-overflow() {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reset-heading() {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+/* flex布局
+------------------- */
+.display-flex() {
+  display: flex;
+}
+.flex-center() {
+  justify-content: center;
+}
+
+.flex-item-center {
+  align-items: center;
+}
+
+.flex-column() {
+  flex-direction: column;
+}
+
+.flex-row() {
+  flex-direction: row;
+}
+
+.flex-wrap() {
+  flex-wrap: wrap;
+}
+
+.flex-between() {
+  justify-content: space-between;
+}
+
+.flex-around() {
+  justify-content: space-around;
+}
+
+.flex-start() {
+  justify-content: flex-start;
+}
+
+.flex-align-center() {
+  justify-content: center;
+  align-items: center;
+}
+
+/* 动画
+------------------- */
+.animated(@all-transition) {
+  opacity: 0;
+  visibility: hidden;
+  transition: @all-transition;
+}
+.animated-active() {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* px2rem
+-------------- */
+.px2rem (@px) {
+  @result: @px / 20px * 1rem
+}
