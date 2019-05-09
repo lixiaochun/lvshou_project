@@ -4,11 +4,11 @@
  */
 
 module.exports = {
-  isShare: false, // 调用分享按钮 true 为分享 false 取消分享
-  title: '测试活动页', // 页面title 这个字段非必填 因为可以直接读接口数据 
+  isShare: true, // 调用分享按钮 true 为分享 false 取消分享
+  title: '火力组队，惠享云“秤”', // 页面title 这个字段非必填 因为可以直接读接口数据 
   name: 'user',
-  description: '测试',
-  keywords: '测试',
+  description: '火力组队，  惠享云“秤”',
+  keywords: '火力组队，  惠享云“秤”',
   tongji: '<script></script>',
   baiduId: '7b8d3d3181a9125ff885b42243377f1c' // 百度埋点 这个id 是必填项 是唯一值
 }

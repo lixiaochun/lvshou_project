@@ -4,10 +4,10 @@
     <!-- <ls-loading></ls-loading> -->
     <div class="head">
       <div class="img-r head-img">
-        <img src="../../assets/img/down_top.png">
+        <img src='http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/mhz1ob4ko3e5nmm7opor69yop8svwcqa'>
       </div>
         <div @click="addButtom()" class="img-r">
-          <img src="../../assets/img/down_bottom.png">
+          <img src='http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/w7rbxhkd1kp0jpdn01zroblv01guoqp7'>
         </div>
     </div>
   </div>
@@ -36,7 +36,7 @@ export default {
   mounted: function () { },
   methods: {
     addButtom() {
-      window.location.href = 'http://app.hxsapp.com/html/channel_statistics.html?channel_id=550';
+      window.location.href = 'http://app.hxsapp.com/html/channel_statistics.html?channel_id=571';
     }
 
   }

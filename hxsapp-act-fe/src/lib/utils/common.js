@@ -2,7 +2,8 @@
  * @desc 用来保存整个框架公用工具类
  * @author chenweiliang@lvshou.com(Ocean)
  */
-import { Toast } from 'mint-ui'
+// import { Toast } from 'mint-ui'
+import LvshouFetch from 'Api/common';
 
 // 拼接url参数
 export const splicingUrl = (options, url = '') => {
@@ -131,20 +132,27 @@ export const compareAppVersion = (new_str, old_str) => {
 
 // 判断手机还是pc
 export const isPcOrIphone = () => {
-
+  let ua = window.navigator.userAgent
   var sUserAgent = window.navigator.userAgent.toLowerCase();
-  var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-  var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-  var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-  var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-  var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-  var bIsAndroid = sUserAgent.match(/android/i) == "android";
-  var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-  var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-  if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-    alert("您是手机登录");
+  var bIsIpad = sUserAgent.match(/ipad/i) === "ipad";
+  var bIsIphoneOs = sUserAgent.match(/iphone os/i) === "iphone os";
+  var bIsMidp = sUserAgent.match(/midp/i) === "midp";
+  var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) === "rv:1.2.3.4";
+  var bIsUc = sUserAgent.match(/ucweb/i) === "ucweb";
+  var bIsAndroid = sUserAgent.match(/android/i) === "android";
+  var bIsCE = sUserAgent.match(/windows ce/i) === "windows ce";
+  var bIsWM = sUserAgent.match(/windows mobile/i) === "windows mobile";
+  let isIos = new RegExp('iPhone').test(ua)
+  let isIpad = new RegExp('iPad').test(ua)
+  let isAndroid = new RegExp('Android').test(ua)
+  if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM || isIos || isIpad || isAndroid) {
+    // Toast('您是手机登录')
+    return true
+    // alert("您是手机登录");
   } else {
-    alert("您是电脑登录");
+    // Toast("您是电脑登录")
+    return false
+    // alert("您是电脑登录");
   }
 }
 
@@ -185,6 +193,10 @@ export const LsShare = ({ shareTitle, shareLink, shareImages, shareDescr, shareT
   // }
 }
 
+export const jsShare = ({ shareTitle, shareLink, shareImages, shareDescr, shareType }) => {
+  window.location.href = `https://hxsapp_tune_up_share#${shareTitle}#${shareLink}#${shareImages}#${shareDescr}##${shareType}#`
+}
+
 // 判断系统
 export const userAgent = () => {
   let ua = window.navigator.userAgent
@@ -216,6 +228,21 @@ export const isApp = () => {
   }
 }
 
+export const baseInforPage = async () => {
+  const baseInformation = {
+    act_id: urlGet('id'),
+    sess_token: urlGet('sess_token'),
+    utime: urlGet('utime'),
+    sign: urlGet('sign'),
+    is_web: urlGet('is_web')
+  };
+  // const is_web = utilsCommon.urlGet('is_web');
+  const apiData = await LvshouFetch({
+    url: 'https://act.hxsapp.com/base/Api/actInfo',
+    data: baseInformation
+  });
+  return apiData
+}
 
 // 暴露 common.js 的方法
 export default {
@@ -225,5 +252,7 @@ export default {
   LsShare,
   compareAppVersion,
   userAgent,
-  isApp
+  isApp,
+  jsShare,
+  baseInforPage
 }

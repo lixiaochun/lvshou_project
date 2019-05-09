@@ -5,8 +5,8 @@
 
 // 引入基础插件
 import Vue from 'vue'
-import Bootstrap from '../slimmingPartner/node_modules/@/bootstrap'
-import Router from '../slimmingPartner/node_modules/@/router'
+import Bootstrap from '@/bootstrap'
+import Router from '@/router'
 import routerConfig from './router'
 import store from './store' // 引入vuex 状态树
 import { LsShareInit } from 'Utils/share'

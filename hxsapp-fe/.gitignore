@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 
 .cache
-libs/
+
 
 # Editor directories and files
 .cache

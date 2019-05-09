@@ -14,7 +14,7 @@
       <!-- pv与loading -->
       <header class="head">
         <div class="img-r head-img">
-          <img src="../../assets/img/img_head.jpg">
+          <img src='http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/1o42pmo02983uuurjobq38s47d76on8p'>
           <h5 class="pos-a-c title"> </h5>
         </div>
       </header>
@@ -27,33 +27,38 @@
                 <img :src="item.img">
              </div>
           </ll>
+          <ll class="item " >
+            <div class="img-r item-img"  >
+              <img src='http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/jg3b8xtcbzdbg62c7havlcpuvhinujbz'>
+           </div>
+         </ll>
 
         </ul>
 
       </section>
-      <div class="img-r">
-        <img class="" src="../../assets/img/content_b.jpg">
-      </div>
+      <!-- <div class="img-r">
+        <img class="" src='http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/zmorismc1ij71520hb7kntfuhbgyt371'>
+      </div> -->
       <div class="content-b-img img-r">
-        <img class="" src="../../assets/img/img_content_b.jpg">
+        <img class="" src='http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/oxpaxmdxt168yieawf00lwni49ildfrv'>
       </div>
       <section class="bottom-c">
         <div class="flex-c b-top">
           <div class="img-r" @click="lookCoupon()">
-            <img class="" src="../../assets/img/look.png">
+            <img class="" src='http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/gfx5mdab8geyi891q1uu1ji88jhhcac0'>
           </div>
           <div class="img-r" @click="toShop()">
-            <img class="" src="../../assets/img/shop.png">
+            <img class="" src='http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/k4kq5qw3sn5zzsnsadu38exf62zjd4hl'>
           </div>
         </div>
         <div class="img-r c-b-title">
-          <img class="" src="../../assets/img/title.png">
+          <img class="" src='http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/l54gdqnouifh9nczk3pndjqtnl7wv1ub'>
         </div>
         <div class="img-r  c-b-img1" @click="toCell()">
-          <img class="" src="../../assets/img/call.png">
+          <img class="" src='http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/0lnjusp2smcffol3nqtmz8w5x1y1c5jx'>
         </div>
         <div class="img-r c-b-img2" @click="toWelfare()">
-          <img class="" src="../../assets/img/join.png">
+          <img class="" src='http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/wox2g07s17z79lbnmvkhrvymzf0ly8dz'>
         </div>
       </section>
 
@@ -99,7 +104,7 @@
         hours: "",
         minutes: "",
         seconds: "",
-        imgaddres: require('../../assets/yhj/true1.png'),
+        imgaddres: 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/57lwabzvdtetq8m7lzp6s5kbea3txzgu',
         isLogin: true,
         axiosList: [],
       }
@@ -234,7 +239,7 @@
         var imgaddres = "../../assets/yhj/";
         var length=that.axiosList.length;
         if(that.isLogin==false){
-          length=10;
+          length=7;
         }
  
         for(var i=0;i<length;i++){
@@ -249,72 +254,72 @@
           switch (i+1) {
             case 1:
               if (element.is_receive == true) {
-                that.imgaddres = require("../../assets/img/false1.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/19qfmb9k3flta5w7rcfkg19c361pkwf5';
               } else {
-                that.imgaddres = require("../../assets/img/true1.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/oe1byk2456k3ak8nqdz6n9z5b4c3v4uo';
               }
               break;
             case 2:
               if (element.is_receive == true) {
-                that.imgaddres = require("../../assets/img/false2.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/r9xwhxzhg9bmljya0gxu1y3qzx5c6k45';
               } else {
-                that.imgaddres = require("../../assets/img/true2.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/1q49p9zvvudnysqyk4a9dzf3kqdkabvs';
               }
               break;
             case 3:
               if (element.is_receive == true) {
-                that.imgaddres = require("../../assets/img/false3.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/v9vdak4zqt770ctndiz3d7o0cdrwxbj2';
               } else {
-                that.imgaddres = require("../../assets/img/true3.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/p91bnm0j5up91qbgp49szu8g89wshl2t';
               }
               break;
             case 4:
               if (element.is_receive == true) {
-                that.imgaddres = require("../../assets/img/false4.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/fcbn8fok8rg0mr1dcdrkrkcce8jxchf8';
               } else {
-                that.imgaddres = require("../../assets/img/true4.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/iu74kpfxdslrrzn7cek7iwr6dqh4qq00';
               }
               break;
             case 5:
               if (element.is_receive == true) {
-                that.imgaddres = require("../../assets/img/false5.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/n2lrrztaa0dehogalj48bfzxgg0jdqbs';
               } else {
-                that.imgaddres = require("../../assets/img/true5.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/5lzcmeikvc2dpv8qy5hjrz5x9qh91ksg';
               }
               break;
             case 6:
               if (element.is_receive == true) {
-                that.imgaddres = require("../../assets/img/false6.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/j9x71zl0fi2as5mkeua9kolme293t7en';
               } else {
-                that.imgaddres = require("../../assets/img/true6.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/z1p0rqeypcobirg6pjy01bucd3j9m2o3';
               }
               break;
             case 7:
               if (element.is_receive == true) {
-                that.imgaddres = require("../../assets/img/false7.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/guynoj9kk7fctsibon0zvqbdwd5t0lp2';
               } else {
-                that.imgaddres = require("../../assets/img/true7.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/5evxafcjhjqjrl66ayy28lda714a1zvm';
               }
               break;
             case 8:
               if (element.is_receive == true) {
-                that.imgaddres = require("../../assets/img/false8.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/5i410iwvffh3uoicejmmwdlimrpc8m1g';
               } else {
-                that.imgaddres = require("../../assets/img/true8.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/7os9xziv3ny6p3z4zpqol9ypqhd8f3np';
               }
               break;
             case 9:
               if (element.is_receive == true) {
-                that.imgaddres = require("../../assets/img/false9.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/k5ks85x4cfbc4org8bbzweqv8tbkvdvj';
               } else {
-                that.imgaddres = require("../../assets/img/true9.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/zvzab5y45w30o3tfvjor91yup1vptplm';
               }
               break;
             case 10:
               if (element.is_receive == true) {
-                that.imgaddres = require("../../assets/img/false10.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/dotz4f60bqpr4fcdwu55rukmexnl19ps';
               } else {
-                that.imgaddres = require("../../assets/img/true10.png");
+                that.imgaddres = 'http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/dgaiv0dposltdpfnfhum61pcr912jsal';
               }
               break;
             default:
@@ -334,7 +339,7 @@
           sess_token: urlGet('sess_token'),
           act_id: urlGet('id'),
         }
-        debugger;
+    
         axios
           .get('https://act.hxsapp.com/draw/NewcomerGift/getCouponList', {
             params: dataInfo
@@ -342,7 +347,10 @@
           .then(res => {
             if (parseInt(res.data.code) === 200) {
               that.imgLists=[];
-              that.axiosList = res.data.data;
+              let datalist=res.data.data;
+              datalist.sort(that.compare('c_id'));
+              debugger;
+              that.axiosList =datalist;
               that.getImgList();
             } else if (parseInt(res.data.code) == 401) {
               that.imgLists=[];
@@ -355,6 +363,13 @@
               });
             }
           });
+      },
+      compare(property){
+          return function(a,b){
+              var value1 = a[property];
+              var value2 = b[property];
+              return value1 - value2;
+          }
       },
       getCoupon(id,is_finished) {
         var that = this;
@@ -394,7 +409,7 @@
               that.getActInfo();
              
               Toast({
-                message:  res.data.msg,
+                message:  '领取'+res.data.msg,
                 position: 'bottom',
                 duration: 3000
               });
@@ -434,10 +449,13 @@
       //跳转商城首页
       toShop() {
         _hmt.push(['_trackEvent', '按钮', '新手礼包二期', '前往商城']);
+
         if (userAgent() === 'ios') {
-          window.location.href = 'https://hxsapp_gopage?page_name=MallHomeController'
+         // window.location.href = 'https://hxsapp_gopage?page_name=MallHomeController'
+            window.location.href = 'https://hxsapp_gopage?page_name=HXSMallHomeViewController'
         } else if (userAgent() === 'and') {
-          window.location.href = 'https://hxsapp_gopage?page_name=com.lvshou.hxs.activity.shop.ShopActivity'
+       //   window.location.href = 'https://hxsapp_gopage?page_name=com.lvshou.hxs.activity.shop.ShopActivity'
+           window.location.href = 'https://hxsapp_gopage?page_name=com.lvshou.hxs.activity.shop.ShopSecondActivity'
         }
       },
       //跳转顾问
@@ -701,7 +719,7 @@
       color: white;
       padding: 0rem 0rem;
       height: 1rem;
-      background-image: url("../../assets/images/bootm1.png");
+      background-image: url('http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/mc6cs1e0ceof2sgcrs2eprqovkuroqkq');
       background-size: 100%;
       text-align: center;
 
@@ -718,7 +736,7 @@
     }
 
     .goods-list {
-      background-image: url("../../assets/img/img_content.jpg");
+      background-image: url('http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/nl3uzxapil6ayllqy431edvf7g7wksoh');
       background-size: 100% auto;
       min-height: 50vh;
       height: 100%;
@@ -742,13 +760,15 @@
     }
 
     .bottom-c {
-      background-image: url("../../assets/img/img_b.png");
+      background-image: url('http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/7p87u1ezmtkmsjmc9rky8lymnflnowow');
       background-size: 100% auto;
       min-height: 20vh;
       height: 100%;
       background-repeat: repeat-y;
       background-position: initial;
       background-color: #49159b;
+      margin-top: -0.15rem;
+    position: relative;
     }
 
     .head {
@@ -791,7 +811,7 @@
       line-height: 0.85rem;
       font-size: 0.35rem;
       margin-top: 0.3rem;
-      background-image: url("../../assets/images/rule.png");
+      background-image: url('http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/ewn23fwik2s6nk13fxx3k3d12v53lgda');
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: 50% 50%;

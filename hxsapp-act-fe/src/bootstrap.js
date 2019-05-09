@@ -16,18 +16,22 @@ import '@/lib/utils/lib-flexible'
 // 导入css reset
 import 'normalize.css'
 import './assets/less/public.less'
+
+import VueLazyload from 'vue-lazyload'
+
+// 全局公用组件
+import * as Components from '@/components'
+
 // vuex 状态树管理
 // import store from './store'
 
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
-import VueLazyload from 'vue-lazyload'
+
 Vue.use(VueLazyload, {
   preLoad: 1.3,
   attempt: 1
 })
-// 全局公用组件
-import * as Components from '@/components'
 
 // Vue.use(ElementUI)
 // Vue.use(VueVideoPlayer)

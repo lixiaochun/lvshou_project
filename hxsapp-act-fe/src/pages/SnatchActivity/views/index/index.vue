@@ -17,7 +17,7 @@
         </h4>
 
         <div class="img-r head-img">
-          <img src="../../assets/images/header.png">
+          <img src='http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/iqq03xa7icdmevlcxa8a5j547b2edfph'>
         </div>
 
         <h4 class="award-box flex-c center">
@@ -92,7 +92,8 @@
       this.getActInfo();
     },
     mounted: function () {
-      document.title = ''
+      document.title = '';
+      
       this.$nextTick(() => {
         _hmt.push(['_trackEvent', '按钮', '赢绿豆享大牌', '页面初始化'])
       })
@@ -424,7 +425,7 @@
       color: white;
       padding: 0rem 0rem;
       height: 1rem;
-      background-image: url("../../assets/images/bootm1.png");
+      background-image: url('http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/sbo4k9tl7f9kjkr2p8b5997lmkr3gzbn');
       background-size: 100%; 
       text-align: center;
 
@@ -443,7 +444,7 @@
     .goods-list {
       padding: 0.4rem 0.95rem;
       padding-bottom: 0.5rem;
-      background-image: url("../../assets/images/bg.png");
+      background-image: url('http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/gvbf0odtsjyucwj211ap80f9fm24kpoq');
       background-size: 100%;
       background-repeat: repeat-y;
       padding-top: 1.2rem;
@@ -493,7 +494,7 @@
       line-height: 0.85rem;
       font-size: 0.35rem;
       margin-top: 0.3rem;
-      background-image: url("../../assets/images/rule.png");
+      background-image: url('http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/jpdlli241kr0u3vu0rsd86ktlnn1a09q');
       background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;

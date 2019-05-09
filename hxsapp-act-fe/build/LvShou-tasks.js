@@ -54,7 +54,7 @@ module.exports = (gulp, lvShouConfig) => {
       remotePath: '/apps/data/work/html/actweb.hxsapp.com/' + process.argv[3], //部署到服务器的路径
       host: '121.41.83.91', //ip地址
       user: 'bravo', //帐号
-      pass: "LrEaAfMty4UD", //密码
+      pass: "y^y*13IiLy3j", //密码
       port: 48022 //端口
     }
     // gulp.src(`${r(lvShouConfig.distPath)}/**/**`).pipe(sftp(Object.assign(sftpConfig, {})))

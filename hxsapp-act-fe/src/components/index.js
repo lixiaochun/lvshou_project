@@ -7,11 +7,13 @@ import lsImg from './LsImg'
 import lsLoading from './LsLoading'
 import lsPv from './LsPv'
 import lsPvUv from './LsPvUv'
+import lsTimeDown from './LsTimeDown'
 
 export {
   testHeaders,
   lsImg,
   lsLoading,
   lsPv,
-  lsPvUv
+  lsPvUv,
+  lsTimeDown
 }

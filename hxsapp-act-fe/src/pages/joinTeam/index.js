@@ -11,12 +11,13 @@ import routerConfig from './router'
 import store from './store' // 引入vuex 状态树
 import { LsShareInit } from 'Utils/share'
 import pageConfig from './config'
+import { isPcOrIphone } from 'Utils/common'
 
 // 当前页面所需公用组件
 import * as LocalComponents from './components'
 
 // 是否初始化分享按钮
-pageConfig.isShare && LsShareInit(pageConfig.isShare)
+pageConfig.isShare && isPcOrIphone() && LsShareInit(pageConfig.isShare)
 
 // 入口视图组件
 // import Component from './views'

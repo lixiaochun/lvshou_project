@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import axios from 'axios';
+import axios from 'axios';
 import { urlGet } from 'Utils/common'
 import { mintToast } from 'Utils/method'
 // import { Toast } from 'mint-ui'
@@ -66,7 +66,7 @@ export default {
   top: 0;
   width: 160px;
   height: 60px;
-  background: url("../../assets/images/pvBack.png") top left;
+  background: url('http://hxsapp-fe.oss-cn-hangzhou.aliyuncs.com/201905/s4fs2wws7mialuo78swqi3sha4shcfv6') top left;
   background-size: 100% 100%;
   -webkit-transform: translateZ(0);
   h5 {
